@@ -20,11 +20,13 @@ const megaroster = {
             id: this.max + 1,
             name: f.studentName.value,
         }
-        this.students.push(student) 
+        this.students.unshift(student) 
+        
         const listItem = this.buildListItem(student)
-        this.studentList.appendChild(listItem)
+        this.studentList.insertBefore(listItem, this.studentList.firstChild)
+        
         this.max ++
-        f.reset()
+        f.reset() //reset the form
     },
 
     buildListItem(student) {
