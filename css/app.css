@@ -1,0 +1,20 @@
+.template {
+  visibility: hidden;
+}
+
+.student {
+  border: 1px solid #ddd;
+  height: 4rem;
+}
+
+.actions {
+  float: right;
+}
+
+.up {
+    float: right;
+}
+
+.down {
+    float: right;
+}
