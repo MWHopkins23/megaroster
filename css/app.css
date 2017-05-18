@@ -25,3 +25,13 @@ span.student-name {
   background-color: #FFA807;
   border-color: #FFC656;
 }
+
+.student:first-child button.move-up {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.student:nth-last-child(2) button.move-down {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
