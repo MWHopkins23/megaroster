@@ -117,7 +117,10 @@ class Megaroster {
     li
       .querySelector('button.move-down')
       .addEventListener('click', this.moveDown.bind(this, student))
-
+    
+    li
+      .querySelector('button.edit')
+      .addEventListener('click', this.editContent.bind(this, student))
   }
 
   moveUp(student, ev) {
@@ -156,6 +159,17 @@ class Megaroster {
 
       this.save()
     }
+  }
+
+  editContent(student, ev) {
+    const btn = ev.target
+    const li = btn.closest('.student')
+    if (li.contentEditable == "true") {
+    li.contentEditable = "false";
+    } else {
+    li.contentEditable = "true";
+    }
+    this.save()
   }
 
   removeClassName(el, className){
