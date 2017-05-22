@@ -35,3 +35,14 @@ span.student-name {
   background-color: #ddd;
   cursor: not-allowed;
 }
+
+[contentEditable]:hover {
+  outline-color: blue;
+  outline-style: auto;
+  outline-width: 5px;
+
+}
+
+[contentEditable]: focus {
+  outline-width: 5px;
+}
